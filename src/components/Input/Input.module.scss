@@ -1,0 +1,18 @@
+@use '../colors';
+
+// .wrapper {
+//   display: block;
+//   position: relative;
+// }
+
+.input {
+  // width: 390px;
+  height: 56px;
+  border: none;
+  border-bottom: 1px solid colors.$blue;
+  font-size: 38px;
+
+  &:focus {
+    outline: none;
+  }
+}
