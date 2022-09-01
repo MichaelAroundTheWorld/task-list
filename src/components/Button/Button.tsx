@@ -1,9 +1,14 @@
-import { ButtonHTMLAttributes, FC } from 'react';
+import { FC } from 'react';
+import styles from './Button.module.scss';
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  onClick?: () => void;
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  // onClick?: () => void;
 }
 
 export const Button: FC<ButtonProps> = ({ onClick, children, ...props }) => {
-  return <button> {children} </button>;
+  return (
+    <button className={styles.addButton} onClick={onClick}>
+      {children}
+    </button>
+  );
 };

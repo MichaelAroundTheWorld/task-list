@@ -1,14 +1,8 @@
 import React from 'react';
-import { Input } from './components/Input/Input';
-import { Button } from './components/Button/Button';
+import { Main } from './components/pages/main/Main';
 
 function App() {
-  return (
-    <div className="main">
-      <Input placeholder="To do" />
-      <Button children="Add" />
-    </div>
-  );
+  return <Main />;
 }
 
 export default App;
