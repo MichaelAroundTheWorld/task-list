@@ -1,4 +1,9 @@
 .todoList {
+  display: flex;
+  list-style: none;
+  border: 1px solid;
+  height: 86px;
+  width: 550px;
 }
 
 .empyList {
