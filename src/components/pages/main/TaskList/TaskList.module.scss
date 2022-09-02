@@ -1,9 +1,28 @@
+.wrapper {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  width: 100%;
+}
+
+.table {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  width: 100%;
+}
+
 .todoList {
+  font-size: 22px;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .empyList {
 }
 
 .todo {
-  display: flex;
+  margin-left: 32%;
+  width: 28%;
 }

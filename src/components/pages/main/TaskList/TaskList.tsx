@@ -11,14 +11,20 @@ export const TaskList: FC<TaskListProps> = ({ todos, handleDelClick }) => {
   return (
     <>
       {todos.length > 0 ? (
-        <ul className={styles.todoList}>
+        <div className={styles.wrapper}>
           {todos.map((todo, index) => (
-            <div className={styles.todo}>
-              <li key={index}>{todo}</li>
-              <Button onClick={() => handleDelClick(todo)}>Delete</Button>
-            </div>
+            <>
+              <div className={styles.table}>
+                <div className={styles.todo}>
+                  <ul className={styles.todoList}>
+                    <li key={index}>{todo}</li>
+                  </ul>
+                </div>
+                <Button onClick={() => handleDelClick(todo)}>Delete</Button>
+              </div>
+            </>
           ))}
-        </ul>
+        </div>
       ) : (
         <div className={styles.empyList}>
           <p>No tasks added yet</p>
